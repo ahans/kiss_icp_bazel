@@ -1,0 +1,9 @@
+load("@rules_cc//cc:cc_test.bzl", "cc_test")
+
+cc_test(
+    name = "kiss_icp_test",
+    srcs = ["kiss_icp_test.cpp"],
+    deps = [
+        "@kiss_icp",
+    ],
+)
